@@ -1,6 +1,6 @@
 $(function () {
   // 调用gitUserInfo 获取用户基本信息
-  gitUserInfo()
+  getUserInfo()
 
   var layer = layui.layer
 
@@ -23,7 +23,7 @@ $(function () {
 
 })
 // 获取用户的基本信息
-function gitUserInfo() {
+function getUserInfo() {
   $.ajax({
     method: 'GET',
     url: "/my/userinfo",
